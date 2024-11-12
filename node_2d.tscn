@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://bek78qkpn07ul"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_wf11i"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(265, 119)
+scale = Vector2(17.3171, 14.112)
+script = ExtResource("1_wf11i")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 10.9718
+offset_top = 9.49547
+offset_right = 28.9718
+offset_bottom = 40.4955
+scale = Vector2(0.444042, 0.286337)
+action_mode = 0
+text = "0"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
